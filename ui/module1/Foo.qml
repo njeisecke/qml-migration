@@ -1,0 +1,6 @@
+import ".."
+
+Text {
+    text: "foo"
+}
+
