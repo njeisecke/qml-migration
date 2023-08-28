@@ -41,3 +41,8 @@ be added to the CMakeLists.txt manually:
       PROPERTIES
         QT_QML_SINGLETON_TYPE TRUE
     )
+
+## enable_unity_builds.py
+
+This script enables cmake unity builds for all the generated `CMakeLists.txt`. While this does
+not make much difference for incrementals builds, it significantly saves time in rebuilds of a project.

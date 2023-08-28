@@ -1,5 +1,7 @@
 import os
 
+from common import *
+
 # Define the folder below below "ui", that contains the existing code base, set to "." if ui is toplevel
 # main_level = "./desktop"
 
@@ -23,12 +25,8 @@ def generate_cmake_lists(path, qml_files):
     directory = os.path.basename(path)
     # print(f'{directory} => {path}')
 
-    if path == ".":
-        module_name = f'ui'
-        uri = f'ui'
-    else:
-        module_name = f'ui_{path.replace("./", "").replace("/", "_")}'
-        uri = f'ui.{path.replace("./", "").replace("/", ".")}'
+    module_name = path_to_module_name(path)
+    uri = path_to_uri(path)
 
     cmake_content = f'qt_add_library({module_name} STATIC)\n\n'
 
