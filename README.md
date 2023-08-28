@@ -1,10 +1,10 @@
 # qml-migration
 
-Some scripts to help migration of legacy code to the Qt 6.6 qml module system
+Some scripts to help migration of legacy code to the Qt 6.6 qml module system.
 
 ## collect_modules.py
 
-It's probably necessary to adjust the script but it should be a good starting point.
+It's probably necessary to adjust this script but it should be a good starting point.
 
 The script helps to convert code structured in the "old way":
 
